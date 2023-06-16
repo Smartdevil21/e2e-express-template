@@ -1,7 +1,11 @@
-import { Schema, model } from "mongoose";
+import mongoose, { Schema, model } from "mongoose";
 import { ITodo } from "@/resource/todo/todo.interface";
 
 const todoSchema = new Schema({
+	uid: {
+		type: mongoose.Schema.Types.ObjectId,
+		required: true,
+	},
 	title: {
 		type: String,
 		required: true,
