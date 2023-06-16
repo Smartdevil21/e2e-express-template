@@ -1,16 +1,17 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"NODE_ENV=testing jest --runInBand --coverage --verbose",
+    "test": "NODE_ENV=testing jest --runInBand --coverage --verbose",
     "dev": "tsc-watch --onSuccess \"node ./build/index.js\"",
     "start": "node build/index.js",
     "build": "tsc",
-    "lint":"eslint .",
+    "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "standard-version"
   },
   "keywords": [],
   "author": "",
